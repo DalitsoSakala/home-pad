@@ -1,4 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+// Font faces
+@font-face {
+    font-family: landasans;
+    src: url(assets/fonts/landasans-medium.ttf);
+}
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// add declared landasans font
+body { margin: 0; font-family: landasans, Roboto, "Helvetica Neue", sans-serif; }
