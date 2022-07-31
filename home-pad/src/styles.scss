@@ -7,3 +7,12 @@
 html, body { height: 100%; }
 // add declared landasans font
 body { margin: 0; font-family: landasans, Roboto, "Helvetica Neue", sans-serif; }
+
+*{
+    font-size: 18px;
+}
+
+a{
+    color: rgb(29, 7, 7);
+    text-decoration-style: dashed;
+}
