@@ -1,0 +1,59 @@
+// Copyright (C) Dalitso Sakala <contact@dalitsosakala.com>
+// All Rights Reserved.
+// Unauthorized copying of this file, via any medium is strictly
+// prohibited proprietary and confidential.
+
+
+
+header,#contact-box{
+    margin: 2rem auto;
+    max-width: 900px;
+
+
+    ///
+    /// Design for small screens only
+    /// 
+    padding: 0 20px;
+}
+
+header{
+
+    img#cover-img-mini{
+        display:none;
+    }
+    img#avatar{
+        // match size in html
+        border-radius: 180px;
+    }
+
+    ///
+    /// Design for small screens only
+    /// 
+    
+    @media (max-width: 599.98px) {
+        img#cover-img{
+            display:none;
+        }
+        img#cover-img-mini{
+            display:inline-flex;
+        }
+        img#avatar{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    @media (max-width: 320px) {
+        img#avatar{
+            border-radius: 0;
+        }
+    }
+}
+
+
+#contact-box{
+    a#alt-email{
+        display:inline-block;
+        // to align with first email
+        margin-left:2.5rem;
+    }
+}
