@@ -3,7 +3,26 @@
 // Unauthorized copying of this file, via any medium is strictly
 // prohibited proprietary and confidential.
 
-header{
-    max-width: 900px;
+
+
+header,#contact-box{
     margin: 2rem auto;
+    max-width: 900px;
+}
+
+header{
+
+    img#avatar{
+        // match size in html
+        border-radius: 180px;
+    }
+}
+
+
+#contact-box{
+    a#alt-email{
+        display:inline-block;
+        // to align with first email
+        margin-left:2.5rem;
+    }
 }

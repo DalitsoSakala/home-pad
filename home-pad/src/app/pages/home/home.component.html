@@ -1,8 +1,27 @@
 <main>
-    <div fxLayout="column" fxLayout-gt.sm="row" fxLayoutAlign="center space-between">
+    <header fxLayout.xs="column" fxLayout="row" fxLayoutAlign="center space-between">
         <!--original image is 400x203 -->
-        <img src="assets/images/title.png" width="200" height="100"  alt="Dalitso Sakala">
+        <img fxFlex="200px" src="assets/images/title.png" height="100" alt="Dalitso Sakala">
+        <div fxFlex="" fxLayout="row" fxLayoutAlign="center">
+            <a href="https://github.com/DalitsoSakala">
+                <img src="assets/images/github.png" width="50" height="50" alt="">
+            </a>
+        </div>
+        <img id="avatar" fxFlex="180px"
+            src="https://pbs.twimg.com/profile_images/1506824902992617479/boI5kcdN_400x400.jpg" height="180" alt="">
+    </header>
 
-        <img src="https://pbs.twimg.com/profile_images/1506824902992617479/boI5kcdN_400x400.jpg" width="180" height="180" alt="">
+
+
+
+    <div id="contact-box" fxLayout="row" fxLayoutAlign="start">
+        <section>
+            <p>Email: <a href="mailto:contact@dalitsosakala.com">contact@dalitsosakala.com</a><br>
+                <a id="alt-email" href="mailto:dalitso.sakala@cs.unza.zm">dalitso.sakala@cs.unza.zm</a>
+            </p>
+            <p>Phone: +260969044766</p>
+            <p>https://dalitsosakala.com</p>
+        </section>
     </div>
+
 </main>
