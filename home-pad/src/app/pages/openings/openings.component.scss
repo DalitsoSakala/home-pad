@@ -1,0 +1,44 @@
+// Copyright (C) Dalitso Sakala <contact@dalitsosakala.com>
+// All Rights Reserved.
+// Unauthorized copying of this file, via any medium is strictly
+// prohibited proprietary and confidential.
+
+mat-toolbar {
+    h1 {
+        display: flex;
+        align-items: center;
+        color: black;
+    }
+    > div {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        img {
+            height: 50px;
+        }
+        img#avatar {
+            display: block;
+            border-radius: 50px;
+            background-clip: padding-box;
+        }
+    }
+}
+
+
+h1#intro{
+    border-bottom: 1px solid rgb(46, 45, 45);
+    opacity: .7;
+    font-size:larger;
+    width: 11rem;
+}
+
+app-sub-heading{
+    padding-left: 3rem;
+}
+
+#root {
+    width: 100%;
+    max-width: 900px;
+    padding: 1rem;
+    margin:0 auto;
+}

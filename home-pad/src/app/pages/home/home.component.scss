@@ -5,7 +5,7 @@
 
 
 
-header,#contact-box{
+header,.card-row{
     margin: 2rem auto;
     max-width: 900px;
 
@@ -50,7 +50,8 @@ header{
 }
 
 
-#contact-box{
+.card-row{
+    margin-bottom:2rem;
     a#alt-email{
         display:inline-block;
         // to align with first email

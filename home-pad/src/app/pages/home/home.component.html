@@ -4,7 +4,7 @@
         <img id="cover-img" fxFlex="200px" src="assets/images/title.png" height="100" alt="Dalitso Sakala">
 
 
-        <div fxFlex="" fxLayout="row" fxLayoutAlign="center"  fxLayoutAlign.xs="space-between" [style.padding.px]="20">
+        <div fxFlex="" fxLayout="row" fxLayoutAlign="center" fxLayoutAlign.xs="space-between" [style.padding.px]="20">
 
             <img id="cover-img-mini" fxFlex="50px" src="assets/images/title-mini.png" height="50px" alt="DS">
 
@@ -20,14 +20,57 @@
 
 
 
-    <div id="contact-box" fxLayout="row" fxLayoutAlign="start">
-        <section>
-            <p>Email: <a href="mailto:contact@dalitsosakala.com">contact@dalitsosakala.com</a><br>
-                <a id="alt-email" href="mailto:dalitso.sakala@cs.unza.zm">dalitso.sakala@cs.unza.zm</a>
-            </p>
-            <p>Phone: +260969044766</p>
-            <p>https://dalitsosakala.com</p>
-        </section>
+    <div class="card-row" fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="2rem" fxLayoutAlign="space-between">
+        <mat-card>
+            <mat-card-title>Contact Me</mat-card-title>
+            <mat-list>
+                <mat-list-item>
+                    <mat-icon mat-list-icon>mail</mat-icon>
+                    <a href="mailto:contact@dalitsosakala.com">contact@dalitsosakala.com</a>
+                </mat-list-item>
+
+                <mat-list-item>
+                    <mat-icon mat-list-icon>alternate_email</mat-icon>
+                    <a href="https://twitter.com/aboutdalitso">aboutDalitso</a>
+                </mat-list-item>
+            </mat-list>
+        </mat-card>
+
+
+        <mat-card>
+            <mat-card-subtitle>
+                <h4><mat-icon>work</mat-icon> Past Projects</h4>
+            </mat-card-subtitle>
+                <mat-list>
+                    <mat-list-item *ngFor="let project of pastProjects">
+                        <div mat-line>
+                            <h5>{{project.name}}</h5>
+                        </div>
+                        <div mat-line=""><span>{{project.about}}</span></div>
+                    </mat-list-item>
+                </mat-list>
+        </mat-card>
+    </div>
+
+
+
+
+    <div class="card-row" [style.margin-top.rem]="3" fxLayout="row" fxLayoutAlign="space-between">
+        <mat-card>
+            <mat-card-subtitle><h4><mat-icon>star</mat-icon> Openings</h4></mat-card-subtitle>
+            <mat-list>
+                <mat-list-item class="pointer" *ngFor="let opening of currentOpenings" [routerLink]="['','openings',opening.link]">
+                    <div mat-line>
+                        <h5>{{opening.name}}</h5>
+                        <span fxFlex=""></span>
+                        <a [routerLink]="['','openings',opening.link]">
+                            <mat-icon>link</mat-icon>
+                        </a>
+                    </div>
+                    <div mat-line=""><span>{{opening.about}}</span></div>
+                </mat-list-item>
+            </mat-list>
+        </mat-card>
     </div>
 
 </main>
