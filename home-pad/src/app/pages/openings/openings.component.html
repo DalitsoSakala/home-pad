@@ -1,0 +1,42 @@
+<mat-toolbar color="primary">
+    <div>
+        <h1>
+            <img [routerLink]="['']" class="pointer" id="cover-img-mini" fxFlex="50px" src="assets/images/title-mini.png" height="50px" alt="DS">
+            &nbsp;
+            <span>Openings</span>
+        </h1>
+        <span fxFlex=""></span>
+        <div>
+            <img id="avatar" src="https://pbs.twimg.com/profile_images/1506824902992617479/boI5kcdN_400x400.jpg" alt="">
+        </div>
+    </div>
+</mat-toolbar>
+
+
+
+<div id="root">
+
+    <h1 id="intro">Openings in...</h1>
+    <ng-template [ngIf]="angular" [ngIfElse]="flutter">
+        <app-sub-heading text="Angular" logo="angular"></app-sub-heading>
+        <ul>
+            <li>Basic Typescript</li>
+            <li>Basic HTML</li>
+            <li>Services</li>
+            <li>Components</li>
+            
+        </ul>
+
+    </ng-template>
+
+
+    <ng-template #flutter>
+        <app-sub-heading text="Flutter" logo="flutter"></app-sub-heading>
+
+        <ul>
+            <li>Basic Dart</li>
+            <li>Basic Flutter</li>
+        </ul>
+
+    </ng-template>
+</div>

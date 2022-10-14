@@ -1,0 +1,36 @@
+// Copyright (C) Dalitso Sakala <contact@dalitsosakala.com>
+// All Rights Reserved.
+// Unauthorized copying of this file, via any medium is strictly
+// prohibited proprietary and confidential.
+
+main{
+    min-height: 90vh;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 3rem;
+    min-height: 10vh;
+    > div {
+        margin: 0 auto;
+        max-width: 900px;
+        > p {
+            display: flex;
+            span {
+                a,
+                & {
+                    display: inline-block;
+                }
+                &:nth-child(1) {
+                    margin-left: 1rem;
+                }
+                a {
+                    padding: 0 1rem;
+                    color: white;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
